@@ -31,7 +31,7 @@ class Calculator {
     }
 
     compute() {
-
+        
     }
 
     updateDisplay() {
