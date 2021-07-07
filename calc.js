@@ -16,10 +16,14 @@ class Calculator {
     }
 
     addNumToScreen(userNumber) {
-        this.currentOperand = userNumber
+        if (userNumber === '.' && this.currentOperand.includes('.')) return //check for multiple '.'s
+        this.currentOperand = this.currentOperand.toString() + userNumber.toString()
     }
 
     chooseOperation(operation) {
+        this.operation = operation
+        this.previousOperand = this.currentOperand
+        this.currentOperand = ''
 
     }
 
@@ -29,6 +33,7 @@ class Calculator {
 
     updateDisplay() {
         this.currentOperandTextElement.innerText = this.currentOperand
+        this.previousOperandTextElement.innerText = this.previousOperand
     }
 }
 
