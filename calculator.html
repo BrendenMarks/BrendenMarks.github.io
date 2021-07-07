@@ -1,12 +1,36 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calcStyle.css">
+    <script src="calc.js" defer></script>
 </head>
 <body>
     <h1>Calculator</h1>
+    <div class="calculator-grid">
+        <div class="output">
+            <div data-prev-operand class="prev-operand"></div>
+            <div data-current-operand class="current-operand"></div>
+        </div>
+        <button data-clear class="span-two">C</button>
+        <button data-delete>DEL</button>
+        <button data-operation>÷</button> <!--assigned data classifications to buttons for JS-->
+        <button data-num>1</button>
+        <button data-num>2</button>
+        <button data-num>3</button>
+        <button data-operation>*</button>
+        <button data-num>4</button>
+        <button data-num>5</button>
+        <button data-num>6</button>
+        <button data-operation>+</button>
+        <button data-num>7</button>
+        <button data-num>8</button>
+        <button data-num>9</button>
+        <button data-operation>-</button>
+        <button data-num>.</button>
+        <button data-num>0</button>
+        <button data-equals class="span-two">=</button>
+    </div>
 </body>
 </html>

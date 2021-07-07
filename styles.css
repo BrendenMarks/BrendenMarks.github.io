@@ -1,5 +1,11 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: normal;
+}
+
 body {
     margin: 0;
-    background: burlywood;
+    background: linear-gradient(to right, Aqua, Chartreuse);
     text-align: center;
 }
