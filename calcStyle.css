@@ -11,6 +11,10 @@ body {
     text-align: center;
 }
 
+.header > h1 {
+    line-height: 100px;
+}
+
 .calculator-grid {
     display: grid;
     justify-content: center;
