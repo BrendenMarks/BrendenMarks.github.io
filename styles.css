@@ -6,6 +6,6 @@
 
 body {
     margin: 0;
-    background: linear-gradient(to right, white, black);
+    background: linear-gradient(to right, black, white);
     text-align: center;
 }
